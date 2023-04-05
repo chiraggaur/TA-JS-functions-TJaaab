@@ -92,3 +92,19 @@
   - Alert `The factorial of [number] is [factorial]`
 
 */
+
+function getFactorial () {
+ 
+let number = +prompt (" Enter a number ");
+let factorial = 1;
+
+for (let i = number; i > 0; i--){
+        factorial *= i ;
+
+}
+ alert (`The Factorial of ${number} is ${factorial}`);
+
+} getFactorial ();
+
+
+
