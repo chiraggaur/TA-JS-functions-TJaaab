@@ -8,9 +8,15 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
-}
+// function calculateDogAge(age) {
+//       let humanYear = 7;
+//       let dogYear = age * humanYear;
+//       return (`Your puppy age is ${dogYear} dog years`);
+
+
+// } 
+// let dogAge = calculateDogAge(+prompt("your puppy's age"));
+// console.log (dogAge);
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +25,12 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
-}
+// function calculateMoviesToWatch(age, number,maxAge = 80) {
+//    let month = number * 4;
+//    let totalMoviesWatched = (maxAge -age) * month ;
+//    console.log(`totalMoviesWatched in rest of life are ${totalMoviesWatched}`);
+
+// }  let num = calculateMoviesToWatch (20,10);
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -29,9 +38,12 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
-}
+// function celsiusToFahrenheit(cel) {
+//        let fer = ( cel * 95 ) + 32 ;
+//        return fer;
+// } 
+// let converted = celsiusToFahrenheit( Number(prompt("What is the temp in cel ? ")));
+// console.log(converted);
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,10 +51,12 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
-  // Your code goes here
-}
-
+// function celsiusToFahrenheit(fer) {
+//      cel = (fer - 32) / 95;
+//      return cel;
+// }
+// let converted = celsiusToFahrenheit( Number(prompt("What is the temp in fer ? ")));
+// console.log(converted);
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
 
@@ -50,59 +64,78 @@ function celsiusToFahrenheit() {
   * [ ] Return x times n
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
-
-function pow() {
-  // Your code goes here
-}
+    
+// function pow(n, x) {
+//         let power = n;
+//     if (n > 0) {
+//       for (let i = x; i > 1; i-- ){
+//         power *= n;
+//       }
+//       return power;
+//     } else {
+//        return ("The number below 1 is not allowed");
+//      }
+// } 
 
 // Test
-pow(3, 2); // 9
-pow(3, 3); // 27
-pow(1, 100); // 1
-pow(-31, 2); // "The number below 1 is not allowed"
+// pow(3, 2); // 9
+// pow(3, 3); // 27
+// pow(1, 100); // 1
+// pow(-31, 2); // "The number below 1 is not allowed"
 
 /*
 6. 🎖Write a program that accepts two parameter a number n and a string with possible values of `sum` or `product`
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
-  // Your code goes here
-}
+// function sumOrProductOfN() {
+//   // Your code goes here
+// }
 
-sumOrProductOfN(4, 'sum'); // 10
-sumOrProductOfN(4, 'product'); // 24
-sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
+// sumOrProductOfN(4, 'sum'); // 10
+// sumOrProductOfN(4, 'product'); // 24
+// sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 
 /*
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
-  // Your code goes here
-}
+function sumOfN(n) {
+   for (let i = 1; i < n; i++){
+          n = n + i;
+          console.log(n);
+   }
+    // console.log(n);
+} sumOfN (3);
 
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 
+  
 // Your code goes here
 
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
-}
+// function min(a, b) {
+//   // Your code goes here
+//    if (a < b) {
+//      alert (a + "is min ")
+//    }  else {
+//      alert (b + " is min ");
+//    }
+// }
 
-min(0, 10);
-min(0, -10);
+// min(0, 10);
+// min(0, -10);
 
 /*
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
-}
+// function typeCheck(value) {
+//   // Your code goes here
+//     alert (typeof value);
+// } typeCheck ();
