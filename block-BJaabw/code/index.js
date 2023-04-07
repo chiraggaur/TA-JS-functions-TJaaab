@@ -10,11 +10,16 @@ minToSec(13) ➞ 780
 minToSec(2) ➞ 120
 */
 
-// - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
-}
-// - Execute the function with required parameter
+// // - Write a Function Decleration for above problem
+// function minToSec(min) {
+//   // Your code
+//    const seconds = 60 * min;
+//    console.log(seconds);
+// }
+// // - Execute the function with required parameter
+// minToSec(50) //3000
+// minToSec(13) //780
+// minToSec(2) //120
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,10 +31,20 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
-}
-// - Execute the function with required parameter
+// function isInRange(lower,upper,number) {
+//   // Your code
+
+//   if (number <= upper && number >= lower) {
+//       console.log("true")
+//   } else {
+//     console.log("false");
+//   }
+
+// }
+// // - Execute the function with required parameter
+
+// isInRange(1, 20, 9); // true
+// isInRange(1, 10, 19); // false
 
 /* 2. calculateBMI
 
@@ -49,13 +64,31 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
-}
+// function calculateBMI(weight, height) {
+//   // Your code
+//       const BMI = weight / (height * height);
+//         switch (true) {
+//            case BMI < 18.5 :
+//               console.log("Underweight");
+//               break;
+//           case BMI >= 18.5 && BMI <= 24.9 :
+//               console.log("Normal Weight");
+//               break;
+//           case BMI >= 25 && BMI <= 29.9 :  
+//               console.log("Overweight");
+//               break;
+//           case BMI >= 30 :
+//                console.log("Obese");
+//                break;
+//           default :
+//               console.log(" invalid input ");     
+//       }
+// }
+//   calculateBMI (480,5);
 
 /* 3. appropiateDrinks
 
-Create a function that take the age are return the appropiate drink based on these conditions:
+Create a function that take the age and return the appropiate drink based on these conditions:
 
 - Under 14 years old — return "drink fruit juice"
 - Under 18 years old — return "drink soda"
@@ -64,9 +97,18 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
-}
+// function appropiateDrinks(age) {
+//   // Your code
+//     if (age < 14) {
+//       alert("drink fruit juice");
+//     } else if (age > 14 && age < 18 ) {
+//        alert ("drink soda");
+//     } else if (age > 18 && age < 21) {
+//       alert ("drink fruit-flavored beer");
+//     } else {
+//       alert ("drink throat-piercing vodka");
+//     }
+// }  appropiateDrinks (+prompt("whats your age"));
 
 /* 4. Add two numers or string
 
@@ -79,10 +121,17 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
+function sum(num1 ,num2) {
   // Your code
-}
-
+    if (typeof num1 === 'number' && typeof num2 === 'number'){
+         console.log(num1 + num2);
+    }  else if (typeof num1 === 'string' && typeof num2 === 'string') {
+         console.log(num1 + num2 );
+    } else {
+         alert(" Enter valid values ");
+    }
+} 
+ 
 // Function Test
 sum(2, 4); // 4
 sum('Arya', 'Stark'); // "Arya Stark"
